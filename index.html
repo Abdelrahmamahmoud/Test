@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="shortcut icon" href="./Images/weather-app.png" type="image/x-icon">
+    <!-- Font Awsome Library -->
+    <link rel="stylesheet" href="./CSS/all.min.css">
+    <!-- BootStrap Framework -->
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+    <!-- Main Style -->
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+
+<body>
+    <!-- Nav Starts Here -->
+    <nav class="navbar navbar-expand-lg cs-nav">
+        <div class="container ">
+            <div class="logo d-flex align-items-center ">
+                <img src="./Images/logo.png" alt="" class="logo p-2">
+                <div class=" d-flex flex-column">
+                    <a class="navbar-brand text-white" href="#">Weather</a>
+                    <p class="sm-font text-white">tagline goes here</p>
+                </div>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item px-4 ">
+                        <a class="nav-link text-white  " aria-current="page" href="/Weather%20JS/index.html">Home</a>
+                    </li>
+                    <li class="nav-item px-4">
+                        <a class="nav-link text-white" href="#">News</a>
+                    </li>
+                    <li class="nav-item px-4">
+                        <a class="nav-link text-white" href="#">Live Cameras</a>
+                    </li>
+                    <li class="nav-item px-4">
+                        <a class="nav-link text-white" href="#">Photos</a>
+                    </li>
+                    <li class="nav-item px-4">
+                        <a class="nav-link text-white" href="#">Contact</a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <!-- Nav Ends Here -->
+
+    <!-- Main Section Starts Here -->
+    <section>
+        <div class="hero">
+            <form class="location-finder container">
+                <input type="text" placeholder="Find your location..." id="Search">
+                <input type="button" value="Find" id="submit">
+            </form>
+        </div>
+        <div class="forcast">
+            <div class="container">
+                <div class="forcast-table d-flex flex-wrap justify-content-between w-100 overflow-hidden" id="forcast">
+                   
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- Main Section Ends Here -->
+
+    <!-- BootStrap JS File -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+
+    <!-- Main Js File -->
+    <script src="./js/main.js"></script>
+    <script src="./js/activeLink.js"></script>
+</body>
+
+</html>
+
+<!-- <div class="today-forcast w-33" >
+    <div class="forcast-header d-flex justify-content-between text-center ">
+        <h5>Saturday</h5>
+        <h5> 14 December</h5>
+    </div>
+    <div class="forcast-content p-4">
+        <h4 class="location">
+            Cairo
+        </h4>
+        <div class="degree  d-block mb-1">
+            <h2 class="num ">20<Sup>o</Sup>C</h2>
+            <div class="forcast-icon v-middle">
+                <img class="img-fluid" src="./Images/116.png" alt="">
+            </div>
+        </div>
+
+        <h4 class="cloud-status  my-4">Partly Cloud</h4>
+        <span class="m-2">
+            <img class="img-fluid" src="./Images/icon-umberella.png" alt="">
+            20%
+        </span>
+        <span class="m-2">
+            <img class="img-fluid" src="./Images/icon-wind.png" alt="">
+            18 km/h
+        </span>
+        <span class="m-2">
+            <img class="img-fluid" src="./Images/icon-compass.png" alt="">
+            East
+        </span>
+    </div>
+</div>
+
+<div class="forcast w-33 text-center even-block">
+    <div class="forcast-header text-center ">
+        <h5>Sunday</h5>
+    </div>
+    <div class="forcast-content p-4">
+        <div class="degree2nd  d-block mb-1">
+            <div class="forcast-icon v-middle">
+                <img class="img-fluid" src="./Images/114.png" alt="">
+            </div>
+            <h2 class="num2nd">21.2<Sup>o</Sup>C</h2>
+            <h6 class="num2nd fw-light">11.9<Sup>o</Sup>C</h6>
+        </div>
+
+        <h4 class="cloud-status  my-4">Sunny</h4>
+    </div>
+</div>
+
+<div class="forcast w-33 text-center">
+    <div class="forcast-header text-center ">
+        <h5>Monday</h5>
+    </div>
+    <div class="forcast-content p-4">
+        <div class="degree2nd  d-block mb-1">
+            <div class="forcast-icon v-middle">
+                <img class="img-fluid" src="./Images/114.png" alt="">
+            </div>
+            <h2 class="num2nd">22.1<Sup>o</Sup>C</h2>
+            <h6 class="num2nd fw-light">11.7<Sup>o</Sup>C</h6>
+        </div>
+
+        <h4 class="cloud-status  my-4">Partly Cloud</h4>
+    </div>
+</div> -->

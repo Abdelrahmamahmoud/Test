@@ -1,0 +1,147 @@
+:root {
+  --white-color: #fff;
+  --dark-color-1: #1e202b;
+  --dark-color-2: #323544;
+  --light-blue-1: #009ad8;
+  --small-font: 10px;
+}
+/* a {
+  color: var(--white-color);
+} */
+
+.w-33 {
+  width: 33.33%;
+}
+.cs-nav {
+  height: 15vh;
+  background-color: var(--dark-color-1);
+  color: var(--white-color);
+  .nav-item {
+    transition: all 0.5s ease;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    &:hover {
+      color: #009ad8;
+      border-color: var(--light-blue-1);
+      a {
+        color: var(--light-blue-1) !important;
+      }
+    }
+    &:active {
+      border-color: var(--light-blue-1);
+      a {
+        color: var(--light-blue-1) !important;
+      }
+    }
+  }
+}
+
+.active {
+  color: #009ad8;
+  a {
+    padding-right: 1.5rem !important;
+    padding-left: 1.5rem !important;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    border-color: var(--light-blue-1);
+    color: var(--light-blue-1) !important;
+  }
+}
+
+.navbar-toggler {
+  border: 2px solid var(--light-blue-1);
+  background-color: var(--dark-color-1);
+  transition: all 0.5s ease;
+
+  .navbar-toggler-icon {
+    color: #fff;
+  }
+
+  &:hover {
+    background-color: var(--light-blue-1);
+  }
+}
+
+.logo {
+  height: max-content;
+}
+
+.sm-font {
+  /* font-size: 10px; */
+  font-size: var(--small-font);
+}
+
+.hero {
+  background-image: url(../Images/banner.png);
+  background-size: cover;
+  padding: 70px 0;
+  height: 40vh;
+}
+
+.location-finder {
+  position: relative;
+  input[type="text"] {
+    width: 100%;
+    padding: 20px 50px 20px 20px;
+    background-color: var(--dark-color-1);
+    color: var(--white-color);
+    border-radius: 30px;
+    outline: none;
+    border: none;
+  }
+
+  input[type="button"] {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    bottom: 5px;
+    padding: 0 40px;
+    border: none;
+    background: #009ad8;
+    border-radius: 30px;
+    color: white;
+  }
+}
+section {
+  background-color: var(--dark-color-1);
+  padding-bottom: 30px;
+}
+.forcast-table {
+  background-color: var(--dark-color-2);
+  border-radius: 10px;
+  margin-top: -150px;
+  margin-bottom: 50px;
+  color: #fff;
+
+  .forcast-header {
+    background: rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    font-weight: 400;
+    &::after {
+      content: "";
+      height: 0;
+    }
+  }
+
+  .degree {
+    font-size: 1.6rem;
+    font-weight: 700;
+    .num {
+      font-size: 6.5rem;
+      margin-right: 30px;
+      vertical-align: middle;
+    }
+  }
+
+  .cloud-status {
+    color: var(--light-blue-1);
+  }
+}
+
+.forcast-table:nth-child(2) {
+  background-color: var(--dark-color-1);
+}
+
+.even-block {
+  background-color: var(--dark-color-1);
+}
